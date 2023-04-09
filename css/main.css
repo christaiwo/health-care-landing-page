@@ -1229,6 +1229,10 @@ body {
     justify-content: space-between;
   }
 
+  .md\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
   .md\:gap-10 {
     gap: 2.5rem;
   }

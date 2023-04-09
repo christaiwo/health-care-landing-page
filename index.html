@@ -5,29 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>Trafalgar</title>
 </head>
 <body>
-    <nav class="relative flex flex-row md:flex  lg:flex justify-between mt-6 mx-2 md:mx-10 lg:mx-10 xl:mx-40">
-        <a href="#" class="flex">
-            <div class="border-5 rounded-full bg-blue-500 border-amber-400 w-10 px-2 py-2 h-10 text-center text-bold text-white">T</div>
-            <div class="font-bold px-2 py-2">
-                Trafalgar
+    
+    <nav class="mt-6 mx-2 md:mx-10 lg:mx-10 xl:mx-40">
+        <div class="relative flex flex-row md:flex  lg:flex justify-between">
+            <a href="#" class="flex">
+                <div class="border-5 rounded-full bg-blue-500 border-amber-400 w-10 px-2 py-2 h-10 text-center text-bold text-white">T</div>
+                <div class="font-bold px-2 py-2">
+                    Trafalgar
+                </div>
+            </a>
+            <div class="hidden md:flex gap-16 md:gap-10 px-2 py-2 uppercase">
+                <a href="#" class="hover:text-neutral-500">Home</a>
+                <a href="#" class="hover:text-neutral-500">Find a doctor</a>
+                <a href="#" class="hover:text-neutral-500">App</a>
+                <a href="#" class="hover:text-neutral-500">Testimonials</a>
+                <a href="#" class="hover:text-neutral-500">About Us</a>
             </div>
-        </a>
-        <div class="hidden md:flex gap-16 md:gap-10 px-2 py-2 uppercase">
-            <a href="#" class="hover:text-neutral-500">Home</a>
-            <a href="#" class="hover:text-neutral-500">Find a doctor</a>
-            <a href="#" class="hover:text-neutral-500">App</a>
-            <a href="#" class="hover:text-neutral-500">Testimonials</a>
-            <a href="#" class="hover:text-neutral-500">About Us</a>
+            <button id="menu-btn" class="md:hidden ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
         </div>
         
         <!-- mobile menu -->
-        <div class="md:hidden" id="menu-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+        <div class="md:hidden">
+            <div id="menu" class="absolute hidden w-full items-center flex-col py-8 mt-10 bg-white drop-shadow-md font-bold space-y-6 sm:self-center">
+              <a href="#">Pricing</a>
+              <a href="#">Product</a>
+              <a href="#">About Us</a>
+              <a href="#">Careers</a>
+              <a href="#">Community</a>
+            </div>
         </div>
         
     </nav>
@@ -296,6 +308,6 @@
 
         <img src="./img/dot2.png" alt="" class="absolute bottom-0 left-0 z-50">
     </footer>
-    
+    <script src="./js/script.js"></script>
 </body>
 </html>
