@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="relative md:flex lg:flex justify-between mt-6 mx-2 md:mx-10 lg:mx-10 xl:mx-40">
+    <nav class="relative flex flex-row md:flex  lg:flex justify-between mt-6 mx-2 md:mx-10 lg:mx-10 xl:mx-40">
         <a href="#" class="flex">
             <div class="border-5 rounded-full bg-blue-500 border-amber-400 w-10 px-2 py-2 h-10 text-center text-bold text-white">T</div>
             <div class="font-bold px-2 py-2">
@@ -22,16 +22,14 @@
             <a href="#" class="hover:text-neutral-500">Testimonials</a>
             <a href="#" class="hover:text-neutral-500">About Us</a>
         </div>
+        
         <!-- mobile menu -->
-        <div class="md:hidden">
-            <div id="menu" class=" flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white smw-auto sm:self-center left-6 right-6 drop-shadow-md">
-                <a href="#">Pricing</a>
-                <a href="#">Product</a>
-                <a href="#">About Us</a>
-                <a href="#">Careers</a>
-                <a href="#">Community</a>
-            </div>
+        <div class="md:hidden" id="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
         </div>
+        
     </nav>
     <!-- assistance -->
     <section class="md:flex md:justify-between md:my-10 md:mx-2 mx-2 lg:mx-40 mb-4">
@@ -40,8 +38,11 @@
         </div>
         <div class="my-20 md:mx-2 md:my-40">
             <p class="font-bold text-4xl lg:text-7xl">Virtual healthcare for you</p>
-            <p class="my-10 text-start text-1xl lg:text-2xl text-neutral-500">Trafalgar provides progressive, and affordable <br> healthcare, accessible on mobile and online <br> for everyone</p>
-            <button class="bg-blue-500 rounded-full  h-10 w-36 text-white">Consult today</button>
+            <p class="my-10 text-start text-1xl lg:text-2xl text-neutral-500">Trafalgar provides progressive, and affordable  healthcare, accessible on mobile and online  for everyone</p>
+            <div class="flex justify-center md:justify-start">
+                <button class="bg-blue-500 rounded-full h-10 w-36 text-white">Consult today</button>
+            </div>
+              
         </div>
         <div class="my-20 md:mx-2 md:my-30">
             <img src="./img/trafalgar-header illustration 1trafalgarbg.png" alt="">
@@ -123,11 +124,13 @@
             <p class=" mb-4">
                 Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely
             </p>
-            <button class="flex flex-row justify-center items-center border-2 bg-transparent border-blue-500 text-blue-500 rounded-full w-40 h-10 mt-8 ">Download 
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                  </svg>                  
-            </button>
+            <div class="flex justify-center md:justify-start"></div>
+                <button class="flex flex-row justify-center items-center border-2 bg-transparent border-blue-500 text-blue-500 rounded-full w-40 h-10 mt-8 ">Download 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>                  
+                </button>
+            </div>
         </div>
         <div class="">
             <img src="./img/trafalgar-illustration sec03 1.png" class="h-full w-full"  alt="">
@@ -242,5 +245,57 @@
             <button class="border-2 bg-transparent border-blue-500 text-blue-500 rounded-full w-40 h-10 mt-8">Learn more</button>
         </div>
     </section>
+
+    <footer class="relative py-5 h-full w-full bg-gradient-to-l from-[#5A98F2] to-[#67C3F3] shadow-2xl mt-20">
+        <img src="./img/dot.png" alt="" class="absolute top-0 mt-[-90px] right-4 z-50">
+        <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <div class="flex flex-col text-white">
+                <div class="my-5">
+                    <a href="#" class="flex">
+                        <div class="border-5 rounded-full bg-white border-amber-400 w-10 px-2 py-2 h-10 text-center text-bold text-black">T</div>
+                        <div class="font-bold text-white px-2 py-2">
+                            Trafalgar
+                        </div>
+                    </a>
+                </div>
+                <div class="">
+                    <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
+                        for everyone
+                    </p>
+                    <p class="my-5">©Trafalgar PTY LTD 2020. All rights reserved</p>
+                </div>
+            </div>
+            <div class="flex justify-around space-x-32 text-center">
+                <div class="flex flex-col space-y-3 text-white">
+                    <h1 class="text-2xl">Company</h1>
+                    <a href="" class="hove:text-brightRed">Home</a>
+                    <a href="" class="hove:text-brightRed">Pricing</a>
+                    <a href="" class="hove:text-brightRed">Products</a>
+                    <a href="" class="hove:text-brightRed">About</a>
+                </div>
+            </div>
+            <div class="flex justify-around space-x-32 text-center">
+                <div class="flex flex-col space-y-3 text-white">
+                    <h1 class="text-2xl">Region</h1>
+                    <a href="" class="hove:text-brightRed">Home</a>
+                    <a href="" class="hove:text-brightRed">Pricing</a>
+                    <a href="" class="hove:text-brightRed">Products</a>
+                    <a href="" class="hove:text-brightRed">About</a>
+                </div>
+            </div>
+            <div class="flex justify-around space-x-32 text-center">
+                <div class="flex flex-col space-y-3 text-white">
+                    <h1 class="text-2xl">Help</h1>
+                    <a href="" class="hove:text-brightRed">Home</a>
+                    <a href="" class="hove:text-brightRed">Pricing</a>
+                    <a href="" class="hove:text-brightRed">Products</a>
+                    <a href="" class="hove:text-brightRed">About</a>
+                </div>
+            </div>
+        </div>
+
+        <img src="./img/dot2.png" alt="" class="absolute bottom-0 left-0 z-50">
+    </footer>
+    
 </body>
 </html>
